@@ -3,46 +3,72 @@ from Calculadora import Operaciones
 
 class Principal():
 
-    def principal(self):
+    def principal(self, ):
 
         pila = []
         resultado = 0
 
         while True:
 
+            cadena = ""
+
             print("CALULADORA NOTACION POLACA INVERSA")
 
-            elemento = input(": ")
+            print("\nPILA DE DATOS:")
+
+            for i in range(0, len(pila)):
+                cadena = cadena + (str(pila[i])+" ")
+
+            print (cadena)
+
+            elemento = raw_input(": ")
 
             if elemento == "+":
-                resultado = Operaciones.Operaciones().suma(pila[len(pila)-2], pila[len(pila)-1])
-                pila.pop()
-                pila[len(pila)-1] = resultado
+                if len(pila)>=2:
+                    resultado = Operaciones.Operaciones().suma(pila[len(pila)-2], pila[len(pila)-1])
+                    pila.pop()
+                    pila[len(pila)-1] = resultado
+                else:
+                    print ("Argumentos insuficientes")
 
             elif elemento == "-":
-                resultado = Operaciones.Operaciones().resta(pila[len(pila)-2], pila[len(pila)-1])
-                pila.pop()
-                pila[len(pila)-1] = resultado
+                if len(pila)>=2:
+                    resultado = Operaciones.Operaciones().resta(pila[len(pila)-2], pila[len(pila)-1])
+                    pila.pop()
+                    pila[len(pila)-1] = resultado
+                else:
+                    print ("Argumentos insuficientes")
 
             elif elemento == "*":
-                resultado = Operaciones.Operaciones().multiplicacion(pila[len(pila)-2], pila[len(pila)-1])
-                pila.pop()
-                pila[len(pila)-1] = resultado
+                if len(pila)>=2:
+                    resultado = Operaciones.Operaciones().multiplicacion(pila[len(pila)-2], pila[len(pila)-1])
+                    pila.pop()
+                    pila[len(pila)-1] = resultado
+                else:
+                    print ("Argumentos insuficientes")
 
             elif elemento == "/":
-                resultado = Operaciones.Operaciones().division(pila[len(pila)-2], pila[len(pila)-1])
-                pila.pop()
-                pila[len(pila) - 1] = resultado
+                if len(pila)>=2:
+                    resultado = Operaciones.Operaciones().division(pila[len(pila)-2], pila[len(pila)-1])
+                    pila.pop()
+                    pila[len(pila) - 1] = resultado
+                else:
+                    print ("Argumentos insuficientes")
 
             elif elemento == "sig":
-                pila[len(pila) - 1] = Operaciones.Operaciones().signo(pila[len(pila)-1])
+                if len(pila)>=1:
+                    pila[len(pila) - 1] = Operaciones.Operaciones().signo(pila[len(pila)-1])
+                else:
+                    print ("Argumentos isuficientes")
+
+            elif elemento == "s":
+                exit()
 
             elif elemento.isalpha():
-                pass
+                print ("No puedo interpretar la funcion indicada")
 
             elif float(elemento):
                 pila.append(elemento)
 
 
-            for i in range(0, len(pila)):
-                print (pila[i])
+
