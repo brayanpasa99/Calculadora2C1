@@ -3,10 +3,12 @@ from Calculadora import Operaciones
 
 class Principal():
 
+    def __init__(self):
+        pass
+
     def principal(self, ):
 
         pila = []
-        resultado = 0
 
         while True:
 
@@ -66,6 +68,9 @@ class Principal():
 
             elif elemento.isalpha():
                 print ("No puedo interpretar la funcion indicada")
+
+            elif elemento.isspace() or elemento == "":
+                print ("Verifique los datos insertados")
 
             elif float(elemento):
                 pila.append(elemento)
