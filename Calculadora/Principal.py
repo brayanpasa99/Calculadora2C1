@@ -18,7 +18,6 @@ class Principal():
 
             for i in range(0, len(pila)):
                 cadena = cadena + (str(pila[i])+" ")
-
             print (cadena)
 
             elemento = raw_input(": ")
@@ -61,6 +60,9 @@ class Principal():
                 else:
                     print ("Argumentos isuficientes")
 
+            elif elemento == "o":
+                Operaciones.Operaciones().radixSort(pila)
+
             elif elemento == "s":
                 exit()
 
@@ -69,6 +71,4 @@ class Principal():
 
             elif float(elemento):
                 pila.append(elemento)
-
-
 
