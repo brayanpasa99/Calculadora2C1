@@ -18,7 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,6 +42,7 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Calculadora/Operaciones.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,11 +57,16 @@
                 <element signature="e#405#433#0" />
               </folding>
 =======
+=======
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Calculadora/Principal.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
               <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+<<<<<<< HEAD
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
+=======
 >>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
             </state>
           </provider>
@@ -229,8 +238,12 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
 =======
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
 >>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
@@ -245,7 +258,11 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49946696" visible="true" weight="0.32827735" />
+=======
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3286385" />
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
 =======
       <window_info anchor="bottom" id="Run" order="6" weight="0.3286385" />
 >>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
@@ -266,6 +283,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -285,9 +303,19 @@
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
 =======
     <entry file="file://$PROJECT_DIR$/Calculadora/Operaciones.py">
+=======
+    <entry file="file://$PROJECT_DIR$/Calculadora/Operaciones.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculadora/Principal.py">
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -299,8 +327,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Calculadora/Principal.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="385">
           <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
         </state>
@@ -322,6 +351,10 @@
 =======
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+>>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
+=======
         <state>
           <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
 >>>>>>> e1fd0e50613c31b88e0c8b5cb500bdcb44784fae
