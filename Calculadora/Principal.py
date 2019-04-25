@@ -63,7 +63,8 @@ class Principal():
                     print ("Argumentos isuficientes")
 
             elif elemento == "o":
-                Operaciones.Operaciones().radixSort(pila)
+                Operaciones.Operaciones().ordenamientoPorMezcla(pila)
+
             elif elemento == "b":
                 valor = raw_input("Valor a buscar: ")
                 Operaciones.Operaciones().buscar(pila, valor)
@@ -74,9 +75,16 @@ class Principal():
             elif elemento.isalpha():
                 print ("No puedo interpretar la funcion indicada")
 
+            elif elemento.isalpha():
+                if elemento.isdigit():
+                    pila.append(elemento)
+                else:
+                    print ("Prueba")
+
+
             elif elemento.isspace() or elemento == "":
                 print ("Verifique los datos insertados")
 
-            elif float(elemento):
-                pila.append(elemento)
+            else:
+                pila.append(float(elemento))
 

@@ -25,33 +25,33 @@ class Operaciones():
                 print('Elemento encontrado en la posicion: ', i)
                 print("")
 
-    def countingSort(self, arr, exp1):
+    def ordenamientoPorMezcla(self, unaLista):
+        if len(unaLista)>1:
+            mitad = len(unaLista)//2
+            mitadIzquierda = unaLista[:mitad]
+            mitadDerecha = unaLista[mitad:]
 
-        n = len(arr)
-        output = [0] * (n)
+            self.ordenamientoPorMezcla(mitadIzquierda)
+            self.ordenamientoPorMezcla(mitadDerecha)
 
-        count = [0] * (10)
+            i=0
+            j=0
+            k=0
+            while i < len(mitadIzquierda) and j < len(mitadDerecha):
+                if mitadIzquierda[i] < mitadDerecha[j]:
+                    unaLista[k]=mitadIzquierda[i]
+                    i=i+1
+                else:
+                    unaLista[k]=mitadDerecha[j]
+                    j=j+1
+                k=k+1
 
-        for i in range(0, n):
-            index = (int(arr[i]) / exp1)
-            count[(index) % 10] += 1
+            while i < len(mitadIzquierda):
+                unaLista[k]=mitadIzquierda[i]
+                i=i+1
+                k=k+1
 
-        for i in range(1, 10):
-            count[i] += count[i - 1]
-
-        i = n - 1
-        while i >= 0:
-            index = (int(arr[i]) / exp1)
-            output[count[(index) % 10] - 1] = arr[i]
-            count[(index) % 10] -= 1
-            i -= 1
-
-        for i in range(0, len(arr)):
-            arr[i] = output[i]
-
-    def radixSort(self, arr):
-        max1 = max(arr)
-        exp = 1
-        while int(max1) / exp > 0:
-            self.countingSort(arr, exp)
-            exp *= 10
+            while j < len(mitadDerecha):
+                unaLista[k]=mitadDerecha[j]
+                j=j+1
+                k=k+1
