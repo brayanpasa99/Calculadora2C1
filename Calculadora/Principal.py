@@ -67,7 +67,7 @@ class Principal():
 
             elif elemento == "b":
                 valor = raw_input("Valor a buscar: ")
-                Operaciones.Operaciones().buscar(pila, valor)
+                Operaciones.Operaciones().buscar(pila, float(valor))
 
             elif elemento == "s":
                 exit()
