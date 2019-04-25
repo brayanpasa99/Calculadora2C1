@@ -64,6 +64,9 @@ class Principal():
 
             elif elemento == "o":
                 Operaciones.Operaciones().radixSort(pila)
+            elif elemento == "b":
+                valor = raw_input("Valor a buscar: ")
+                Operaciones.Operaciones().buscar(pila, valor)
 
             elif elemento == "s":
                 exit()

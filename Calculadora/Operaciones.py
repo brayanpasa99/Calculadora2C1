@@ -18,6 +18,13 @@ class Operaciones():
     def signo(self, val):
         return str(float(val)*-1)
 
+    def buscar(self, lista, val):
+
+        for i in range(len(lista)):
+            if lista[i] == val:
+                print('Elemento encontrado en la posicion: ', i)
+                print("")
+
     def countingSort(self, arr, exp1):
 
         n = len(arr)
